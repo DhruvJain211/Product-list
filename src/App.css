@@ -1,38 +1,59 @@
 .App {
+  font-family: Arial, sans-serif;
   text-align: center;
+  background-color: #e0e0e0;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: auto;
+  border: 1px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+th, td {
+  padding: 10px;
+  border: 1px solid black ;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+thead th {
+  background-color: #0000FF;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.delete-button {
+  background-color: #FF0000;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-button {
+  background-color: #00FF00;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-controls button {
+  background-color: #00FF00;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.quantity-controls span {
+  width: 30px;
+  text-align: center;
 }
